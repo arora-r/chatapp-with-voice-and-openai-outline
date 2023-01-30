@@ -5,7 +5,7 @@ let voiceOption = "default";
 const responses = [];
 const botRepeatButtonIDToIndexMap = {};
 const userRepeatButtonIDToRecordingMap = {};
-const baseUrl = "http://localhost:8000";
+const baseUrl = window.location.origin;
 
 async function showBotLoadingAnimation() {
   await sleep(500);
